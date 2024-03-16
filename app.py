@@ -1,5 +1,13 @@
 from flask import Flask, render_template, request
-import smtplib
+from flask_mail import Mail, Message
+import os
+from dotenv import find_dotenv, load_dotenv
+
+dotenv_path = find_dotenv()
+
+load_dotenv(dotenv_path)
+
+mail_password = os.getenv("mail_password")
 
 app = Flask(__name__)
 
@@ -35,6 +43,15 @@ def gallery():
 def classes():
     return render_template("classes.html")
 
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = 'christian375h@gmail.com'
+app.config['MAIL_PASSWORD'] = mail_password
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+mail = Mail(app)
+
 @app.route('/form', methods=["POST"])
 def form():
     sender_name = request.form.get("name")
@@ -42,9 +59,8 @@ def form():
     sender_subject = request.form.get("subject")
     sender_message = request.form.get("message")
 
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login("christian375h@gmail.com", "hvvq pamz cqqn jecw")
-    server.sendmail("christian375h@gmail.com", sender_email, sender_message)
+    msg = Message(subject=sender_subject, sender=sender_email, recipients=['christian375h@gmail.com'])
+    msg.body = sender_name + " has sent a message from " + sender_email + "\n\n" + sender_message
+    mail.send(msg)
 
     return render_template("form.html", sender_name = sender_name, sender_email = sender_email, sender_subject = sender_subject, sender_message = sender_message)
