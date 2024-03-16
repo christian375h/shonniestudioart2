@@ -46,7 +46,7 @@ def classes():
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'christian375h@gmail.com'
+app.config['MAIL_USERNAME'] = 'autoresponder375@gmail.com'
 app.config['MAIL_PASSWORD'] = mail_password
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
@@ -59,7 +59,7 @@ def form():
     sender_subject = request.form.get("subject")
     sender_message = request.form.get("message")
 
-    msg = Message(subject=sender_subject, sender=sender_email, recipients=['christian375h@gmail.com'])
+    msg = Message(subject=sender_subject, sender=sender_email, recipients=['autoresponder375@gmail.com'])
     msg.body = sender_name + " has sent a message from " + sender_email + "\n\n" + sender_message
     mail.send(msg)
 
