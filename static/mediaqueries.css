@@ -1,0 +1,236 @@
+@media only screen and (max-width: 800px) {
+    
+    /* General Styling */
+
+    .title-text-1 {
+        font-size: 1.66rem;
+    }
+
+    .title-text-2 {
+        font-size: 1.25rem;
+    }
+
+    .section-text-p1 {
+        font-size: 0.75rem;
+    }
+
+    .section-text-p2 {
+        font-size: 0.75rem;
+    }
+
+    section {
+        margin-top: 3vh;
+    }
+
+    /* Header Styling */
+
+    .desktop-header-container {
+        display: none;
+    }
+
+    .title-container {
+        display: none;
+    }
+
+    .mobile-header-container {
+        display: flex;
+    }
+
+    footer .contact-container {
+        display: none;
+    }
+
+    /* Home Page */
+
+    /* Introduction Section */
+
+    #introduction {
+        margin-top: 1rem;
+    }
+
+    .introduction-content-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /* About Section */
+
+    #about {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-img-container {
+        height: 300px;
+    }
+
+    .about-content-container {
+        height: fit-content;
+    }
+
+    /* Instructor Section */
+
+    #instructor {
+        height: fit-content;
+    }
+
+    .instructor-container {
+        flex-direction: column;
+        height: fit-content;
+        gap: 3rem;
+        margin-top: 0;
+    }
+
+    .instructor-container img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .instructor-container p {
+        width: 400px;
+    }
+
+    /* Classes Page */
+
+    #classes {
+        margin-top: auto;
+    }
+
+    /* Commissions Page */
+
+    #commissions .section-text-p1, #examples .section-text-p1 {
+        font-size: 2rem;
+    }
+
+    .commissions-pricing-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .commissions-container-left {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .commissions-container-right {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .commissions-img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .commissions-img-container img {
+        width: 250px;
+    }
+
+    /* Contact Page */
+
+    #contact {
+        margin-top: 0;
+    }
+
+    #contact .section-text-p1 {
+        font-size: 2rem;
+    }
+
+    .contact-page-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-container-right {
+        height: fit-content;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:1200px) and (min-width:800px) {
+
+    /* General Styling */
+
+    .title-text-1 {
+        font-size: 2.75rem;
+    }
+
+    .title-text-2 {
+        font-size: 2rem;
+    }
+
+    .section-text-p1 {
+        font-size: 1.5rem;
+    }
+
+    .section-text-p2 {
+        font-size: 1rem;
+    }
+
+    /* Header */
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    /* Footer */
+
+    footer .contact-container {
+        display: none;
+    }
+
+    /* Home Page */
+
+    /* Introduction Section */
+
+    .introduction-content-container {
+        margin-top: 0;
+    }
+
+    /* About Section */
+
+    #about {
+        align-items: flex-start;
+    }
+
+    .about-img-container {
+        height: 300px;
+    }
+
+    .about-content-container {
+        height: fit-content;
+    }
+
+    /* Instructor Section */
+
+    #instructor {
+        height: fit-content;
+    }
+
+    .instructor-container img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .instructor-container p {
+        width: 300px;
+    }
+
+    /* Commissions Page */
+
+    .commissions-pricing-container {
+        gap: 3rem;
+    }
+
+    .commissions-container-left {
+        width: 350px;
+        height: fit-content;
+    }
+
+    .commissions-container-right {
+        width: 350px;
+        height: fit-content;
+    }
+
+}
