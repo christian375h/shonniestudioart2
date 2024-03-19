@@ -146,6 +146,26 @@
         height: fit-content;
         width: 300px;
     }
+
+    /* FAQ Page */
+
+    header .faq-mobile-header {
+        align-items: center;
+    }
+
+    header .faq-mobile-title h1 {
+        width: 200px;
+    }
+
+    .faq-container section{
+        width: 300px;
+    }
+
+    /* Classes Page */
+
+    .class-info-container section {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width:1200px) and (min-width:800px) {
@@ -231,6 +251,18 @@
     .commissions-container-right {
         width: 350px;
         height: fit-content;
+    }
+
+    /* FAQ Page */
+
+    .faq-container section{
+        width: 700px;
+    }
+
+    /* Classes Page */
+
+    .class-info-container section {
+        width: 700px;
     }
 
 }

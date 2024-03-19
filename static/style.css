@@ -137,7 +137,7 @@ header {
 
 .dropdown-content {
     display: flex;
-    height: 0;
+    max-height: 0;
     width: 200px;
     border-radius: 0.25rem;
     overflow: hidden;
@@ -167,7 +167,7 @@ header {
 }
 
 .classes-dropdown:hover .dropdown-content {
-    height: 308px;
+    max-height: 350px;
 }
 
 .classes-dropdown:hover li a {
@@ -228,7 +228,7 @@ header {
     right: 0%;
     background-color: #d9d9d9;
     border-radius: 0.75rem;
-    width: fit-content;
+    width: 200px;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -238,7 +238,7 @@ header {
     display: block;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #212121;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -249,7 +249,7 @@ header {
 }
 
 .menu-links.open{
-    max-height: 400px;
+    max-height: 500px;
 }
 
 .hamburger-icon.open span:first-child{

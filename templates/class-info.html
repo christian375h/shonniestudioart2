@@ -6,6 +6,7 @@
     <title>Class Info</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/mediaqueries.css">
+    <script src="/static/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,28 +14,53 @@
     <script src="https://kit.fontawesome.com/47b23d2432.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <header>
-        <nav class="desktop-nav">
-            <ul class="nav-links">
-                <li><a href="/">HOME</a></li>
-                <li><a href="tattoos.html">GLITTER TATTOOS</a></li>
-                <div class="classes-dropdown">
-                    <li><a href="classes.html">CLASS OPTIONS</a></li>
-                    <div class="dropdown-content">
-                        <a href="#">Arts and Crafts</a>
-                        <a href="#">Drawing Basics</a>
-                        <a href="#">Acrylic Painting</a>
-                        <a href="#">Paint Nights</a>
-                        <a href="#">Summer Camp</a>
-                        <a href="#">Hosting Information</a>
-                        <a href="#">Private Lessons</a>
+        <div class="desktop-header-container">
+            <nav class="desktop-header-nav">
+                <ul class="nav-links">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="tattoos.html">GLITTER TATTOOS</a></li>
+                    <div class="classes-dropdown">
+                        <li><a href="classes.html">CLASS OPTIONS</a></li>
+                        <div class="dropdown-content">
+                            <a href="#">Arts and Crafts</a>
+                            <a href="#">Drawing Basics</a>
+                            <a href="#">Acrylic Painting</a>
+                            <a href="#">Paint Nights</a>
+                            <a href="#">Summer Camp</a>
+                            <a href="#">Hosting Information</a>
+                            <a href="#">Private Lessons</a>
+                        </div>
                     </div>
+                    <li><a href="commissions.html">COMMISSION PIECES</a></li>
+                    <li><a href="gallery.html">ART GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mobile-header-container">
+            <nav class="mobile-header-nav">
+                <div class="title-container-mobile">
+                    <h1 class="title-text-1">CLASS INFORMATION</h1>
                 </div>
-                <li><a href="commissions.html">COMMISSION PIECES</a></li>
-                <li><a href="gallery.html">ART GALLERY</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="/" onclick="toggleMenu()">HOME</a></li>
+                    <li><a href="tattoos.html" onclick="toggleMenu()">TATTOOS</a></li>
+                    <li><a href="classes.html" onclick="toggleMenu()">CLASSES</a></li>
+                    <li><a href="commissions.html" onclick="toggleMenu()">COMMISSIONS</a></li>
+                    <li><a href="gallery.html" onclick="toggleMenu()">GALLERY</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu()">CONTACT</a></li>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section id="introduction">
