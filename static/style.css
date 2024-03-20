@@ -50,6 +50,11 @@ ul {
     text-decoration: underline;
 }
 
+.emphasis {
+    text-decoration: underline;
+    font-style: italic;
+}
+
 /* Buttons */
 
 .btn {
@@ -539,13 +544,102 @@ footer .copyright {
 /* Classes Section */
 
 #classes {
-    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1400px;
+}
+
+#classes .class-tabs {
+    display: none;
+}
+
+#classes .active-class-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .classes-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.classes-container .section-text-p1{
+    font-weight: 400;
+}
+
+.classes-container .section-text-p2{
+    text-decoration: underline;
+}
+
+.classes-container div {
+    display: flex;
+    align-items: center;
+    text-align: center;
     gap: 1rem;
+}
+
+#classes .classes-left {
+    width: 525px;
+    height: 700px;
+    margin-right: auto;
+}
+
+#classes .classes-left .active-class-link {
+    background-color: #212121;
+    color: #fff;
+}
+
+#classes .classes-right {
+    width: 800px;
+    height: fit-content;
+}
+
+#classes .classes-right section{
+    margin-top: 0;
+}
+
+#classes .class-tab-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+}
+
+.class-tab-container .classes-tab-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.class-tab-container .classes-tab-info ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.class-tab-container .classes-tab-info .lesson-subjects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.class-tab-container .classes-tab-info .lesson-subjects-container ul{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
 }
 
 /* FAQ Page */
