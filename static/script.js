@@ -7,15 +7,15 @@ function toggleMenu(){
 }
 
 function openLink(tabName){
-    var projectLinks = document.getElementsByClassName("class-links");
-    var projectTabs = document.getElementsByClassName("class-tabs");
+    var projectLinks = document.getElementsByClassName("selected-links");
+    var projectTabs = document.getElementsByClassName("selected-tabs");
 
     for(projectLink of projectLinks){
-        projectLink.classList.remove("active-class-link");
+        projectLink.classList.remove("active-selected-link");
     }
     for(projectTab of projectTabs){
-        projectTab.classList.remove("active-class-tab");
+        projectTab.classList.remove("active-selected-tab");
     }
-    event.currentTarget.classList.add("active-class-link");
-    document.getElementById(tabName).classList.add("active-class-tab");
+    event.currentTarget.classList.add("active-selected-link");
+    document.getElementById(tabName).classList.add("active-selected-tab");
 }

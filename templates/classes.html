@@ -22,7 +22,7 @@
                     <li><a href="/">HOME</a></li>
                     <li><a href="tattoos.html">GLITTER TATTOOS</a></li>
                     <li><a href="classes.html"class="active-nav-link">CLASS OPTIONS</a></li>
-                    <li><a href="commissions.html">COMMISSION PIECES</a></li>
+                    <li><a href="events.html">SCHEDULE EVENTS</a></li>
                     <li><a href="gallery.html">ART GALLERY</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -44,7 +44,7 @@
                     <li><a href="/" onclick="toggleMenu()">HOME</a></li>
                     <li><a href="tattoos.html" onclick="toggleMenu()">TATTOOS</a></li>
                     <li><a href="classes.html" onclick="toggleMenu()">CLASSES</a></li>
-                    <li><a href="commissions.html" onclick="toggleMenu()">COMMISSIONS</a></li>
+                    <li><a href="events.html" onclick="toggleMenu()">EVENTS</a></li>
                     <li><a href="gallery.html" onclick="toggleMenu()">GALLERY</a></li>
                     <li><a href="contact.html" onclick="toggleMenu()">CONTACT</a></li>
                 </div>
@@ -61,43 +61,25 @@
     <section id="classes">
         <div class="classes-container classes-left">
             <div>
-                <button class="btn class-links active-class-link" onclick="openLink('arts-crafts')">
+                <button class="btn selected-links active-selected-link" onclick="openLink('arts-crafts')">
                     Arts and Crafts
                 </button>
                 <p>(Ages 5 to 8)</p>
             </div>
             <div>
-                <button class="btn class-links" onclick="openLink('drawing-basics')">
+                <button class="btn selected-links" onclick="openLink('drawing-basics')">
                     Drawing Basics
                 </button>
                 <p>(Ages 9 and up)</p>
             </div>
             <div>
-                <button class="btn class-links" onclick="openLink('acrylic')">
+                <button class="btn selected-links" onclick="openLink('acrylic')">
                     Acrylic Painting
                 </button>
                 <p>(Ages 12 and up)</p>
             </div>
             <div>
-                <button class="btn class-links" onclick="openLink('paint-night')">
-                    Paint Nights
-                </button>
-                <p>(Family and Birthday Party Groups)</p>
-            </div>
-            <div>
-                <button class="btn class-links" onclick="openLink('summer-camp')">
-                    Summer Camp
-                </button>
-                <p>(Ages 8 and up)</p>
-            </div>
-            <div>
-                <button class="btn class-links" onclick="openLink('hosting')">
-                    Hosting Information
-                </button>
-                <p>(Utah Locations Only)</p>
-            </div>
-            <div>
-                <button class="btn class-links" onclick="openLink('private-lessons')">
+                <button class="btn selected-links" onclick="openLink('private-lessons')">
                     Private Lessons
                 </button>
                 <p>(All Ages)</p>
@@ -105,15 +87,14 @@
         </div>
 
         <div class="classes-container classes-right">
-            <section id="arts-crafts" class="class-tabs active-class-tab">
+            <section id="arts-crafts" class="selected-tabs active-selected-tab">
                 <h1 class="title-text-2">Arts and Crafts</h1>
                 <div class="class-tab-container pricing basic-info">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
                         <ul>
-                            <li>$45 Per Lesson</li>
-                            <li>Up-Front Payment Discount, $10 off each month</li>
-                            <li>$80 Art kit (if you don't have the materials)</li>
+                            <li>$65 per lesson</li>
+                            <li>Up-front payment discount, $10 off each month</li>
                             <li>Limited number of scholarships offered each week</li>
                         </ul>
                     </div>
@@ -133,39 +114,31 @@
                         </ul>
                     </div>
                 </div>
-                <div class="class-tab-container locations supplies">
+                <div class="class-tab-container locations">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Locations</h2>
-                        <ul>
-                            <li class="section-text-p2">Millcreek</li>
-                            <li>2861 East 2960 South, Salt Lake City, UT</li>
-                            <li>Mondays 6:30PM to 7:15PM MST</li>
-                            <li>Wednesdays 6:30PM to 7:15PM MST</li>
-                            <li class="section-text-p2">Virtual</li>
-                            <li>Via Zoom Link</li>
-                            <li>Mondays 5:30PM to 6:15PM MST</li>
-                            <li>Wednesdays 5:30PM to 6:15PM MST</li>
-                        </ul>
-                    </div>
-                    <div class="classes-tab-info">
-                        <h2 class="section-text-p1">Supplies</h2>
-                        <ul>
-                            <li>8 Markers</li>
-                            <li>Eraser and Pencil</li>
-                            <li>14 Crayons</li>
-                            <li>24 Watercolors</li>
-                            <li>12 Colored Pencils</li>
-                            <li>Ruler</li>
-                            <li>Folder</li>
-                            <li>All Crafts Included</li>
-                            <li>Art Pad</li>
-                        </ul>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Millcreek</li>
+                                <li>Mondays</li>
+                                <li>6:30PM - 7:15PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>6:30PM - 7:15PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Virtual</li>
+                                <li>Mondays</li>
+                                <li>5:30PM - 6:15PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>5:30PM - 6:15PM MST</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="class-tab-container lesson-subjects">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Lesson Subjects</h2>
-                        <div class="lesson-subjects-container">
+                        <div class="wide-tab-container">
                             <ul>
                                 <li class="section-text-p2">Crafts</li>
                                 <li>Building</li>
@@ -179,50 +152,51 @@
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Elements</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li>Lines</li>
+                                <li>Shapes</li>
+                                <li>Texture</li>
+                                <li>Space</li>
+                                <li>Color</li>
+                                <li>Value</li>
+                                <li>Form</li>
                             </ul>
                             <ul>
-                                <li class="section-text-p2">Famous Artists</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li class="section-text-p2">Artists</li>
+                                <li>What makes an artist?</li>
+                                <li>What makes an artist famous?</li>
+                                <li>Future</li>
+                                <li>Present</li>
+                                <li>Recent</li>
+                                <li>Past</li>
+                                <li>Ancient</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Art History</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li>Prehistoric</li>
+                                <li>Ancient</li>
+                                <li>Medieval</li>
+                                <li>Renaissance</li>
+                                <li>Baroque</li>
+                                <li>Neoclassicism</li>
+                                <li>Realism</li>
+                                <li>Impressionism</li>
+                                <li>Fauvism</li>
+                                <li>Cubism</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="drawing-basics" class="class-tabs">
+            <section id="drawing-basics" class="selected-tabs">
                 <h1 class="title-text-2">Drawing Basics</h1>
                 <div class="class-tab-container pricing basic-info">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
                         <ul>
-                            <li>$45 Per Lesson</li>
-                            <li>Up-Front Payment Discount, $10 off each month</li>
-                            <li>$80 Art kit (if you don't have the materials)</li>
+                            <li>$65 per lesson</li>
+                            <li>Up-front payment discount, $10 off each month</li>
+                            <li>$80 Art Kit (if you don't have the materials)</li>
+                            <li>$120 Art Kit shipped out of state</li>
                             <li>Limited number of scholarships offered each week</li>
                         </ul>
                     </div>
@@ -231,112 +205,329 @@
                         <ul>
                             <li>1 - 2 Lessons per week</li>
                             <li class="emphasis">In person only</li>
-                            <li>7 Students per lesson</li>
+                            <li>12 Students per lesson</li>
+                            <li>3 Students per virtual class</li>
                             <li>Make sure to fill out the 
                                 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdxbGJMxj1IxTtR5vwCdXOY6Kn5RKoP5I6TLfvxyRgMiHeNWw/viewform" class="text-link">
                                     sign up sheet
                                 </a>
                             </li>
-                            <li>45 Minutes long</li>
+                            <li>1 Hour long</li>
+                            <li>Students can start at any time</li>
                             <li>Click <a href="class-info.html" class="text-link">here</a> for more info</li>
                         </ul>
                     </div>
                 </div>
-                <div class="class-tab-container locations supplies">
+                <div class="class-tab-container locations">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Locations</h2>
-                        <ul>
-                            <li class="section-text-p2">Millcreek</li>
-                            <li>2861 East 2960 South, Salt Lake City, UT</li>
-                            <li>Mondays 6:30PM to 7:15PM MST</li>
-                            <li>Wednesdays 6:30PM to 7:15PM MST</li>
-                            <li class="section-text-p2">Virtual</li>
-                            <li>Via Zoom Link</li>
-                            <li>Mondays 5:30PM to 6:15PM MST</li>
-                            <li>Wednesdays 5:30PM to 6:15PM MST</li>
-                        </ul>
-                    </div>
-                    <div class="classes-tab-info">
-                        <h2 class="section-text-p1">Supplies</h2>
-                        <ul>
-                            <li>8 Markers</li>
-                            <li>Eraser and Pencil</li>
-                            <li>14 Crayons</li>
-                            <li>24 Watercolors</li>
-                            <li>12 Colored Pencils</li>
-                            <li>Ruler</li>
-                            <li>Folder</li>
-                            <li>All Crafts Included</li>
-                            <li>Art Pad</li>
-                        </ul>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Millcreek</li>
+                                <li>Tuesdays</li>
+                                <li>6:30PM - 7:30PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>5:00PM - 6:00PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Virtual</li>
+                                <li>Mondays</li>
+                                <li>4:30 PM - 5:30 PM MST</li>
+                                <li>8:30 PM - 9:30 PM MST</li>
+                                <li>Thursdays</li>
+                                <li>4:30 PM - 5:30 PM MST</li>
+                                <li>5:30 PM - 6:30 PM MST</li>
+                                <li>6:30 PM - 7:30 PM MST</li>
+                                <li>7:30 PM - 8:30 PM MST</li>
+                                <li>8:30 PM - 9:30 PM MST</li>
+                                <li>Fridays</li>
+                                <li>2:00 PM - 3:00 PM MST</li>
+                                <li>3:00 PM - 4:00 PM MST</li>
+                                <li>4:00 PM - 5:00 PM MST</li>
+                                <li>5:00 PM - 6:00 PM MST</li>
+                                <li>6:00 PM - 7:00 PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Bountiful</li>
+                                <li>Mondays</li>
+                                <li>6:30PM - 7:30PM MST</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="class-tab-container lesson-subjects">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Lesson Subjects</h2>
-                        <div class="lesson-subjects-container">
+                        <div class="wide-tab-container">
                             <ul>
-                                <li class="section-text-p2">Crafts</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li class="section-text-p2">Techniques</li>
+                                <li>Layering</li>
+                                <li>Shading</li>
+                                <li>Loose Sketching</li>
+                                <li>Gesture Drawing</li>
+                                <li>Blending</li>
+                                <li>Erasing Lines</li>
+                                <li>Frottage</li>
+                                <li>Indenting</li>
+                                <li>Contour Line Drawing</li>
+                                <li>Continuous Line Drawing</li>
+                                <li>Detail Work</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Elements</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li>Lines</li>
+                                <li>Shapes</li>
+                                <li>Texture</li>
+                                <li>Space</li>
+                                <li>Color</li>
+                                <li>Value</li>
+                                <li>Form</li>
                             </ul>
                             <ul>
-                                <li class="section-text-p2">Famous Artists</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li class="section-text-p2">Artists</li>
+                                <li>What makes an artist?</li>
+                                <li>What makes an artist famous?</li>
+                                <li>Future</li>
+                                <li>Present</li>
+                                <li>Recent</li>
+                                <li>Past</li>
+                                <li>Ancient</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Art History</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
+                                <li>Prehistoric</li>
+                                <li>Ancient</li>
+                                <li>Medieval</li>
+                                <li>Renaissance</li>
+                                <li>Baroque</li>
+                                <li>Neoclassicism</li>
+                                <li>Realism</li>
+                                <li>Impressionism</li>
+                                <li>Fauvism</li>
+                                <li>Cubism</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="acrylic" class="class-tabs">
-                <p>3</p>
+            <section id="acrylic" class="selected-tabs">
+                <h1 class="title-text-2">Acrylic Painting</h1>
+                <div class="class-tab-container pricing basic-info">
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Pricing</h2>
+                        <ul>
+                            <li>$140 per month ($35 per week)</li>
+                            <li>$120 per month up-front payment discount</li>
+                            <li>$80 Art kit (if you don't have the materials)</li>
+                            <li>$120 Art kit shipped out of state</li>
+                            <li>Limited number of scholarships offered each week</li>
+                        </ul>
+                    </div>
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Basic Info</h2>
+                        <ul>
+                            <li>1 Lesson per week</li>
+                            <li>15 Students per lesson</li>
+                            <li>6 - 15 Students per virtual class</li>
+                            <li>Make sure to fill out the 
+                                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdxbGJMxj1IxTtR5vwCdXOY6Kn5RKoP5I6TLfvxyRgMiHeNWw/viewform" class="text-link">
+                                    sign up sheet
+                                </a>
+                            </li>
+                            <li>1 Hour long</li>
+                            <li>Students can start at any time</li>
+                            <li>Click <a href="class-info.html" class="text-link">here</a> for more info</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class-tab-container locations">
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Millcreek</li>
+                                <li>Wednesdays</li>
+                                <li>7:30PM - 8:30PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Virtual</li>
+                                <li>Mondays</li>
+                                <li>4:30 PM - 5:30 PM MST</li>
+                                <li>8:30 PM - 9:30 PM MST</li>
+                                <li>Thursdays</li>
+                                <li>4:30 PM - 5:30 PM MST</li>
+                                <li>5:30 PM - 6:30 PM MST</li>
+                                <li>6:30 PM - 7:30 PM MST</li>
+                                <li>7:30 PM - 8:30 PM MST</li>
+                                <li>8:30 PM - 9:30 PM MST</li>
+                                <li>Fridays</li>
+                                <li>2:00 PM - 3:00 PM MST</li>
+                                <li>3:00 PM - 4:00 PM MST</li>
+                                <li>4:00 PM - 5:00 PM MST</li>
+                                <li>5:00 PM - 6:00 PM MST</li>
+                                <li>6:00 PM - 7:00 PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Bountiful</li>
+                                <li>Mondays</li>
+                                <li>6:30PM - 7:30PM MST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-tab-container lesson-subjects">
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Lesson Subjects</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Techniques</li>
+                                <li>Layering</li>
+                                <li>Shading</li>
+                                <li>Loose Sketching</li>
+                                <li>Gesture Drawing</li>
+                                <li>Blending</li>
+                                <li>Erasing Lines</li>
+                                <li>Frottage</li>
+                                <li>Indenting</li>
+                                <li>Contour Line Drawing</li>
+                                <li>Continuous Line Drawing</li>
+                                <li>Detail Work</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Elements</li>
+                                <li>Lines</li>
+                                <li>Shapes</li>
+                                <li>Texture</li>
+                                <li>Space</li>
+                                <li>Color</li>
+                                <li>Value</li>
+                                <li>Form</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Artists</li>
+                                <li>What makes an artist?</li>
+                                <li>What makes an artist famous?</li>
+                                <li>Future</li>
+                                <li>Present</li>
+                                <li>Recent</li>
+                                <li>Past</li>
+                                <li>Ancient</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Art History</li>
+                                <li>Prehistoric</li>
+                                <li>Ancient</li>
+                                <li>Medieval</li>
+                                <li>Renaissance</li>
+                                <li>Baroque</li>
+                                <li>Neoclassicism</li>
+                                <li>Realism</li>
+                                <li>Impressionism</li>
+                                <li>Fauvism</li>
+                                <li>Cubism</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="paint-night" class="class-tabs">
-                <p>4</p>
-            </section>
-            <section id="summer-camp" class="class-tabs">
-                <p>5</p>
-            </section>
-            <section id="hosting" class="class-tabs">
-                <p>6</p>
-            </section>
-            <section id="private-lessons" class="class-tabs">
-                <p>7</p>
+            <section id="private-lessons" class="selected-tabs">
+                <h1 class="title-text-2">Private Lessons</h1>
+                <div class="class-tab-container pricing basic-info">
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Pricing</h2>
+                        <ul>
+                            <li>$200 per month</li>
+                            <li>$65 per lesson</li>
+                            <li>Up-front payment discount offered</li>
+                        </ul>
+                    </div>
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Basic Info</h2>
+                        <ul>
+                            <li>1 Lesson per week</li>
+                            <li>Make sure to fill out the 
+                                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdxbGJMxj1IxTtR5vwCdXOY6Kn5RKoP5I6TLfvxyRgMiHeNWw/viewform" class="text-link">
+                                    sign up sheet
+                                </a>
+                            </li>
+                            <li>1 Hour long</li>
+                            <li>Click <a href="class-info.html" class="text-link">here</a> for more info</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class-tab-container locations">
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Millcreek</li>
+                                <li>Fridays</li>
+                                <li>8:00AM - 9:00PM MST</li>
+                                <li>9:30AM - 10:30PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Virtual</li>
+                                <li>Fridays</li>
+                                <li>8:00AM - 9:00PM MST</li>
+                                <li>9:30AM - 10:30PM MST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-tab-container lesson-subjects">
+                    <div class="classes-tab-info">
+                        <h2 class="section-text-p1">Lesson Subjects</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Techniques</li>
+                                <li>Layering</li>
+                                <li>Shading</li>
+                                <li>Loose Sketching</li>
+                                <li>Gesture Drawing</li>
+                                <li>Blending</li>
+                                <li>Erasing Lines</li>
+                                <li>Frottage</li>
+                                <li>Indenting</li>
+                                <li>Contour Line Drawing</li>
+                                <li>Continuous Line Drawing</li>
+                                <li>Detail Work</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Elements</li>
+                                <li>Lines</li>
+                                <li>Shapes</li>
+                                <li>Texture</li>
+                                <li>Space</li>
+                                <li>Color</li>
+                                <li>Value</li>
+                                <li>Form</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Artists</li>
+                                <li>What makes an artist?</li>
+                                <li>What makes an artist famous?</li>
+                                <li>Future</li>
+                                <li>Present</li>
+                                <li>Recent</li>
+                                <li>Past</li>
+                                <li>Ancient</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Art History</li>
+                                <li>Prehistoric</li>
+                                <li>Ancient</li>
+                                <li>Medieval</li>
+                                <li>Renaissance</li>
+                                <li>Baroque</li>
+                                <li>Neoclassicism</li>
+                                <li>Realism</li>
+                                <li>Impressionism</li>
+                                <li>Fauvism</li>
+                                <li>Cubism</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </section>

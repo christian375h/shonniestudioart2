@@ -552,11 +552,11 @@ footer .copyright {
     width: 1400px;
 }
 
-#classes .class-tabs {
+#classes .selected-tabs {
     display: none;
 }
 
-#classes .active-class-tab {
+#classes .active-selected-tab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -578,6 +578,10 @@ footer .copyright {
     text-decoration: underline;
 }
 
+#classes .btn {
+    width: 300px;
+}
+
 .classes-container div {
     display: flex;
     align-items: center;
@@ -591,7 +595,7 @@ footer .copyright {
     margin-right: auto;
 }
 
-#classes .classes-left .active-class-link {
+#classes .classes-left .active-selected-link {
     background-color: #212121;
     color: #fff;
 }
@@ -626,20 +630,28 @@ footer .copyright {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    width: 100%;
 }
 
-.class-tab-container .classes-tab-info .lesson-subjects-container {
+.class-tab-container .classes-tab-info .wide-tab-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 100%;
     gap: 2rem;
 }
 
-.class-tab-container .classes-tab-info .lesson-subjects-container ul{
+.class-tab-container .classes-tab-info .wide-tab-container ul{
     display: flex;
     text-align: left;
+    width: 100%;
     flex-direction: column;
+}
+
+.classes-tab-info {
+    border-top: solid #6e6e6e;
+    border-radius: 1rem;
 }
 
 /* FAQ Page */
@@ -676,65 +688,117 @@ footer .copyright {
     padding-left: 20px;
 }
 
-/* Comissions Page */
+/* Events Page */
 
-/* Comissions Section */
+/* Events Section */
 
-.commissions-pricing-container {
+#events {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1400px;
+}
+
+#events .selected-tabs {
+    display: none;
+}
+
+#events .active-selected-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.events-container .section-text-p1{
+    font-weight: 400;
+}
+
+.events-container .section-text-p2{
+    text-decoration: underline;
+}
+
+.events-container div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#events .events-left {
+    width: 525px;
+    height: 700px;
+    margin-right: auto;
+}
+
+#events .btn {
+    width: 300px;
+}
+
+#events .events-left .active-selected-link {
+    background-color: #212121;
+    color: #fff;
+}
+
+#events .events-right {
+    width: 900px;
+    height: fit-content;
+}
+
+#events .events-right section {
+    margin-top: 0;
+}
+
+#events .events-tab-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10rem;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
 }
 
-.commissions-container-left {
+.events-tab-container .events-tab-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    height: 300px;
-    gap: 1rem;
+    width: 100%;
+    height: fit-content;
 }
 
-.commissions-container-right {
+.events-tab-container .events-tab-info ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 300px;
-    gap: 1rem;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
 }
 
-.commissions-container-right ul{
-    line-height: 2rem;
-}
-
-.commissions-examples-container {
+.events-tab-container .events-tab-info .wide-tab-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
 }
 
-.examples-title {
+.events-tab-container .events-tab-info .wide-tab-container ul{
     display: flex;
+    text-align: left;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
 }
 
-.commissions-img-container {
-    padding-top: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: auto auto auto;
-}
-
-.commissions-img-container img {
-    width: 250px;
-    border-radius: 0.75rem;
-    transition: all 0.3s;
-}
-
-.commissions-img-container img:hover {
-    transform: scale(1.5);
-    z-index: 1;
+.events-tab-info {
+    border-top: solid #6e6e6e;
+    border-radius: 1rem;
 }

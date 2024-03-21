@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mediaqueries.css">
+    <script src="/static/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47b23d2432.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="desktop-header-container">
+            <nav class="desktop-header-nav">
+                <ul class="nav-links">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="tattoos.html">GLITTER TATTOOS</a></li>
+                    <div class="classes-dropdown">
+                        <li><a href="classes.html">CLASS OPTIONS</a></li>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Arts and Crafts</a>
+                            <a href="#">Drawing Basics</a>
+                            <a href="#">Acrylic Painting</a>
+                            <a href="#">Paint Nights</a>
+                            <a href="#">Summer Camp</a>
+                            <a href="#">Hosting Information</a>
+                            <a href="#">Private Lessons</a>
+                        </div> -->
+                    </div>
+                    <li><a href="events.html" class="active-nav-link">SCHEDULE EVENTS</a></li>
+                    <li><a href="gallery.html">ART GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mobile-header-container">
+            <nav class="mobile-header-nav">
+                <div class="title-container-mobile">
+                    <h1 class="title-text-1">SCHEDULE EVENTS</h1>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="/" onclick="toggleMenu()">HOME</a></li>
+                    <li><a href="tattoos.html" onclick="toggleMenu()">TATTOOS</a></li>
+                    <li><a href="classes.html" onclick="toggleMenu()">CLASSES</a></li>
+                    <li><a href="events.html" onclick="toggleMenu()">EVENTS</a></li>
+                    <li><a href="gallery.html" onclick="toggleMenu()">GALLERY</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu()">CONTACT</a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="introduction">
+        <div class="title-container">
+            <h1 class="title-text-1">SCHEDULE EVENTS</h1>
+            <p class="section-text-p1">Great for Birthdays, Weddings, Reunions and Dances</p>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="events-container events-left">
+            <div>
+                <button class="btn selected-links active-selected-link" onclick="openLink('face-painting')">
+                    Face Painting
+                </button>
+            </div>
+            <div>
+                <button class="btn selected-links" onclick="openLink('tattoos')">
+                    Glitter Tattoos
+                </button>
+            </div>
+            <div>
+                <button class="btn selected-links" onclick="openLink('paint-night')">
+                    Paint Nights
+                </button>
+            </div>
+        </div>
+
+        <div class="events-container events-right">
+            <section id="face-painting" class="selected-tabs active-selected-tab">
+                <h1 class="title-text-2">Face Painting</h1>
+                <div class="events-tab-container pricing basic-info">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Pricing</h2>
+                        <ul>
+                            <li>$35 per person for groups of 1 - 15</li>
+                            <li>$30 per person for groups of 16+</li>
+                            <li>Supplies included</li>
+                        </ul>
+                    </div>
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Basic Info</h2>
+                        <ul>
+                            <li>1 - 2 Lessons per week</li>
+                            <li class="emphasis">In person only</li>
+                            <li>7 Students per lesson</li>
+                            <li>Make sure to fill out the 
+                                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdxbGJMxj1IxTtR5vwCdXOY6Kn5RKoP5I6TLfvxyRgMiHeNWw/viewform" class="text-link">
+                                    sign up sheet
+                                </a>
+                            </li>
+                            <li>45 Minutes long</li>
+                            <li>Click <a href="class-info.html" class="text-link">here</a> for more info</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="events-tab-container locations">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Millcreek</li>
+                                <li>Mondays</li>
+                                <li>6:30PM - 7:15PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>6:30PM - 7:15PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Virtual</li>
+                                <li>Mondays</li>
+                                <li>5:30PM - 6:15PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>5:30PM - 6:15PM MST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-tab-container lesson-subjects">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Lesson Subjects</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Crafts</li>
+                                <li>Building</li>
+                                <li>Creating</li>
+                                <li>Making</li>
+                                <li>Drawing</li>
+                                <li>Designing</li>
+                                <li>Shaping</li>
+                                <li>Coloring</li>
+                                <li>Painting</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Elements</li>
+                                <li>Lines</li>
+                                <li>Shapes</li>
+                                <li>Texture</li>
+                                <li>Space</li>
+                                <li>Color</li>
+                                <li>Value</li>
+                                <li>Form</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Artists</li>
+                                <li>What makes an artist?</li>
+                                <li>What makes an artist famous?</li>
+                                <li>Future</li>
+                                <li>Present</li>
+                                <li>Recent</li>
+                                <li>Past</li>
+                                <li>Ancient</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Art History</li>
+                                <li>Prehistoric</li>
+                                <li>Ancient</li>
+                                <li>Medieval</li>
+                                <li>Renaissance</li>
+                                <li>Baroque</li>
+                                <li>Neoclassicism</li>
+                                <li>Realism</li>
+                                <li>Impressionism</li>
+                                <li>Fauvism</li>
+                                <li>Cubism</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tattoos" class="selected-tabs">
+                <h1 class="title-text-2">Glitter Tattoos</h1>
+                <div class="events-tab-container pricing basic-info">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Pricing</h2>
+                        <ul>
+                            <li>$65 per lesson</li>
+                            <li>Up-front payment discount, $10 off each month</li>
+                            <li>Limited number of scholarships offered each week</li>
+                        </ul>
+                    </div>
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Basic Info</h2>
+                        <ul>
+                            <li>1 - 2 Lessons per week</li>
+                            <li class="emphasis">In person only</li>
+                            <li>7 Students per lesson</li>
+                            <li>Make sure to fill out the 
+                                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdxbGJMxj1IxTtR5vwCdXOY6Kn5RKoP5I6TLfvxyRgMiHeNWw/viewform" class="text-link">
+                                    sign up sheet
+                                </a>
+                            </li>
+                            <li>45 Minutes long</li>
+                            <li>Click <a href="class-info.html" class="text-link">here</a> for more info</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="events-tab-container locations">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Millcreek</li>
+                                <li>Mondays</li>
+                                <li>6:30PM - 7:15PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>6:30PM - 7:15PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Virtual</li>
+                                <li>Mondays</li>
+                                <li>5:30PM - 6:15PM MST</li>
+                                <li>Wednesdays</li>
+                                <li>5:30PM - 6:15PM MST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-tab-container lesson-subjects">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Lesson Subjects</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Crafts</li>
+                                <li>Building</li>
+                                <li>Creating</li>
+                                <li>Making</li>
+                                <li>Drawing</li>
+                                <li>Designing</li>
+                                <li>Shaping</li>
+                                <li>Coloring</li>
+                                <li>Painting</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Elements</li>
+                                <li>Lines</li>
+                                <li>Shapes</li>
+                                <li>Texture</li>
+                                <li>Space</li>
+                                <li>Color</li>
+                                <li>Value</li>
+                                <li>Form</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Artists</li>
+                                <li>What makes an artist?</li>
+                                <li>What makes an artist famous?</li>
+                                <li>Future</li>
+                                <li>Present</li>
+                                <li>Recent</li>
+                                <li>Past</li>
+                                <li>Ancient</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Art History</li>
+                                <li>Prehistoric</li>
+                                <li>Ancient</li>
+                                <li>Medieval</li>
+                                <li>Renaissance</li>
+                                <li>Baroque</li>
+                                <li>Neoclassicism</li>
+                                <li>Realism</li>
+                                <li>Impressionism</li>
+                                <li>Fauvism</li>
+                                <li>Cubism</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="paint-night" class="selected-tabs">
+                <h1 class="title-text-2">Paint Night</h1>
+                <div class="events-tab-container pricing basic-info">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Pricing</h2>
+                        <ul>
+                            <li>$35 per person for groups of 1 - 15</li>
+                            <li>$30 per person for groups of 16+</li>
+                            <li>Supplies included</li>
+                        </ul>
+                    </div>
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Basic Info</h2>
+                        <ul>
+                            <li>Group sessions held every month except August and December</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="events-tab-container times">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Times</h2>
+                        <div class="wide-tab-container">
+                            <ul>
+                                <li class="section-text-p2">Mondays</li>
+                                <li>6:00PM - 7:00PM MST</li>
+                                <li>7:30PM - 8:30PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Fridays</li>
+                                <li>6:00PM - 7:00PM MST</li>
+                                <li>7:30PM - 8:30PM MST</li>
+                            </ul>
+                            <ul>
+                                <li class="section-text-p2">Saturdays</li>
+                                <li>6:00PM - 7:00PM MST</li>
+                                <li>7:30PM - 8:30PM MST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-tab-container painting-options">
+                    <div class="events-tab-info">
+                        <h2 class="section-text-p1">Painting Options</h2>
+                        <div class="wide-tab-container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links-container">
+            <ul class="contact-container">
+                <li>Shonnie Schmidt</li>
+                <li>shonnieart@gmail.com</li>
+                <li>801-200-5363</li>
+            </ul>
+            <ul class="socials-container">
+                <a href="https://www.facebook.com/Shonniestudioart" target="_blank">
+                    <i class="social-icon fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/shonniesart" target="_blank">
+                    <i class="social-icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="contact.html">
+                    <i class="social-icon fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shonnie-schmidt-5a7752233/" target="_blank">
+                    <i class="social-icon fa-brands fa-linkedin-in"></i>
+                </a>
+            </ul>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <p class="copyright">Copyright &#169 shonniestudioart 2024</p>
+    </footer>
+</body>
+</html>

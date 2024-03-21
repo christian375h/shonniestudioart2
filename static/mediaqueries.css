@@ -97,36 +97,6 @@
         margin-top: auto;
     }
 
-    /* Commissions Page */
-
-    #commissions .section-text-p1, #examples .section-text-p1 {
-        font-size: 2rem;
-    }
-
-    .commissions-pricing-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .commissions-container-left {
-        width: 350px;
-        height: fit-content;
-    }
-
-    .commissions-container-right {
-        width: 350px;
-        height: fit-content;
-    }
-
-    .commissions-img-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .commissions-img-container img {
-        width: 250px;
-    }
-
     /* Contact Page */
 
     #contact {
@@ -134,7 +104,7 @@
     }
 
     #contact .section-text-p1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .contact-page-container {
@@ -235,22 +205,6 @@
 
     .instructor-container p {
         width: 300px;
-    }
-
-    /* Commissions Page */
-
-    .commissions-pricing-container {
-        gap: 3rem;
-    }
-
-    .commissions-container-left {
-        width: 350px;
-        height: fit-content;
-    }
-
-    .commissions-container-right {
-        width: 350px;
-        height: fit-content;
     }
 
     /* FAQ Page */

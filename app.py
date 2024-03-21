@@ -23,9 +23,9 @@ def tattoos():
 def class_info():
     return render_template("class-info.html")
 
-@app.route('/commissions.html')
+@app.route('/events.html')
 def commissions():
-    return render_template("commissions.html")
+    return render_template("events.html")
 
 @app.route('/contact.html')
 def contact():
