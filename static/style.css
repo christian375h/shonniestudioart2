@@ -802,3 +802,19 @@ footer .copyright {
     border-top: solid #6e6e6e;
     border-radius: 1rem;
 }
+
+.art-example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.art-example-container img {
+    width: 150px;
+    border-radius: 0.75rem;
+    transition: all 0.3s;
+}
+
+.wide-tab-container img:hover{
+    transform: scale(2);
+    z-index: 1;
+}
