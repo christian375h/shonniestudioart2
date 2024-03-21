@@ -366,9 +366,14 @@ footer .copyright {
 /* About Section */
 
 #about {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 5rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .about-img-container {
