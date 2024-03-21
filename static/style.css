@@ -864,3 +864,59 @@ footer .copyright {
 #events .time-title .section-text-p2{
     text-decoration: none;
 }
+
+#events .events-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#events .events-title .section-text-p2 {
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Galley Page */
+
+/* Student Gallery Section */
+
+#gallery {
+    margin-bottom: 5rem;
+}
+
+#gallery .title-text-2 {
+    display: none;
+}
+
+.student-art-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.student-art-container .student-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.student-art-container .student-container .student-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.student-art-container .student-container .student-sub-container img {
+    width: 300px;
+    border-radius: 0.75rem;
+    transition: all 0.3s;
+}
+
+.student-art-container .student-container img:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
