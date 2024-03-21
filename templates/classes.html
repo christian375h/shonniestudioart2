@@ -64,31 +64,30 @@
                 <button class="btn selected-links active-selected-link" onclick="openLink('arts-crafts')">
                     Arts and Crafts
                 </button>
-                <p>(Ages 5 to 8)</p>
             </div>
             <div>
                 <button class="btn selected-links" onclick="openLink('drawing-basics')">
                     Drawing Basics
                 </button>
-                <p>(Ages 9 and up)</p>
             </div>
             <div>
                 <button class="btn selected-links" onclick="openLink('acrylic')">
                     Acrylic Painting
                 </button>
-                <p>(Ages 12 and up)</p>
             </div>
             <div>
                 <button class="btn selected-links" onclick="openLink('private-lessons')">
                     Private Lessons
                 </button>
-                <p>(All Ages)</p>
             </div>
         </div>
 
         <div class="classes-container classes-right">
             <section id="arts-crafts" class="selected-tabs active-selected-tab">
-                <h1 class="title-text-2">Arts and Crafts</h1>
+                <div class="class-title">
+                    <h1 class="title-text-2">Arts and Crafts</h1>
+                    <p class="section-text-p2">Ages 5 - 8</p>
+                </div>
                 <div class="class-tab-container pricing basic-info">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
@@ -122,21 +121,24 @@
                 </div>
                 <div class="class-tab-container locations">
                     <div class="classes-tab-info">
-                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="location-title">
+                            <h2 class="section-text-p1">Locations</h2>
+                            <p class="section-text-p2">Mountain Standard Time</p>
+                        </div>
                         <div class="wide-tab-container">
                             <ul>
                                 <li class="section-text-p2">Millcreek</li>
-                                <li>Mondays</li>
-                                <li>6:30PM - 7:15PM MST</li>
-                                <li>Wednesdays</li>
-                                <li>6:30PM - 7:15PM MST</li>
+                                <li class="emphasis">Mondays</li>
+                                <li>6:30PM - 7:15PM</li>
+                                <li class="emphasis">Wednesdays</li>
+                                <li>6:30PM - 7:15PM</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Virtual</li>
-                                <li>Mondays</li>
-                                <li>5:30PM - 6:15PM MST</li>
-                                <li>Wednesdays</li>
-                                <li>5:30PM - 6:15PM MST</li>
+                                <li class="emphasis">Mondays</li>
+                                <li>5:30PM - 6:15PM</li>
+                                <li class="emphasis">Wednesdays</li>
+                                <li>5:30PM - 6:15PM</li>
                             </ul>
                         </div>
                     </div>
@@ -145,56 +147,63 @@
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Lesson Subjects</h2>
                         <div class="wide-tab-container">
-                            <ul>
-                                <li class="section-text-p2">Crafts</li>
-                                <li>Building</li>
-                                <li>Creating</li>
-                                <li>Making</li>
-                                <li>Drawing</li>
-                                <li>Designing</li>
-                                <li>Shaping</li>
-                                <li>Coloring</li>
-                                <li>Painting</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Elements</li>
-                                <li>Lines</li>
-                                <li>Shapes</li>
-                                <li>Texture</li>
-                                <li>Space</li>
-                                <li>Color</li>
-                                <li>Value</li>
-                                <li>Form</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Artists</li>
-                                <li>What makes an artist?</li>
-                                <li>What makes an artist famous?</li>
-                                <li>Future</li>
-                                <li>Present</li>
-                                <li>Recent</li>
-                                <li>Past</li>
-                                <li>Ancient</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Art History</li>
-                                <li>Prehistoric</li>
-                                <li>Ancient</li>
-                                <li>Medieval</li>
-                                <li>Renaissance</li>
-                                <li>Baroque</li>
-                                <li>Neoclassicism</li>
-                                <li>Realism</li>
-                                <li>Impressionism</li>
-                                <li>Fauvism</li>
-                                <li>Cubism</li>
-                            </ul>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Crafts</li>
+                                    <li>Building</li>
+                                    <li>Creating</li>
+                                    <li>Making</li>
+                                    <li>Drawing</li>
+                                    <li>Designing</li>
+                                    <li>Shaping</li>
+                                    <li>Coloring</li>
+                                    <li>Painting</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Elements</li>
+                                    <li>Lines</li>
+                                    <li>Shapes</li>
+                                    <li>Texture</li>
+                                    <li>Space</li>
+                                    <li>Color</li>
+                                    <li>Value</li>
+                                    <li>Form</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Artists</li>
+                                    <li>What makes an artist?</li>
+                                    <li>What makes an artist famous?</li>
+                                    <li>Future</li>
+                                    <li>Present</li>
+                                    <li>Recent</li>
+                                    <li>Past</li>
+                                    <li>Ancient</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Art History</li>
+                                    <li>Prehistoric</li>
+                                    <li>Ancient</li>
+                                    <li>Medieval</li>
+                                    <li>Renaissance</li>
+                                    <li>Baroque</li>
+                                    <li>Neoclassicism</li>
+                                    <li>Realism</li>
+                                    <li>Impressionism</li>
+                                    <li>Fauvism</li>
+                                    <li>Cubism</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="drawing-basics" class="selected-tabs">
-                <h1 class="title-text-2">Drawing Basics</h1>
+                <div class="class-title">
+                    <h1 class="title-text-2">Drawing Basics</h1>
+                    <p class="section-text-p2">Ages 9 and up</p>
+                </div>
                 <div class="class-tab-container pricing basic-info">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
@@ -232,37 +241,40 @@
                 </div>
                 <div class="class-tab-container locations">
                     <div class="classes-tab-info">
-                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="location-title">
+                            <h2 class="section-text-p1">Locations</h2>
+                            <p class="section-text-p2">Mountain Standard Time</p>
+                        </div>
                         <div class="wide-tab-container">
                             <ul>
                                 <li class="section-text-p2">Millcreek</li>
-                                <li>Tuesdays</li>
-                                <li>6:30PM - 7:30PM MST</li>
-                                <li>Wednesdays</li>
-                                <li>5:00PM - 6:00PM MST</li>
+                                <li class="emphasis">Tuesdays</li>
+                                <li>6:30PM - 7:30PM</li>
+                                <li class="emphasis">Wednesdays</li>
+                                <li>5:00PM - 6:00PM</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Virtual</li>
-                                <li>Mondays</li>
-                                <li>4:30 PM - 5:30 PM MST</li>
-                                <li>8:30 PM - 9:30 PM MST</li>
-                                <li>Thursdays</li>
-                                <li>4:30 PM - 5:30 PM MST</li>
-                                <li>5:30 PM - 6:30 PM MST</li>
-                                <li>6:30 PM - 7:30 PM MST</li>
-                                <li>7:30 PM - 8:30 PM MST</li>
-                                <li>8:30 PM - 9:30 PM MST</li>
-                                <li>Fridays</li>
-                                <li>2:00 PM - 3:00 PM MST</li>
-                                <li>3:00 PM - 4:00 PM MST</li>
-                                <li>4:00 PM - 5:00 PM MST</li>
-                                <li>5:00 PM - 6:00 PM MST</li>
-                                <li>6:00 PM - 7:00 PM MST</li>
+                                <li class="emphasis">Mondays - MST</li>
+                                <li>4:30 PM - 5:30 PM</li>
+                                <li>8:30 PM - 9:30 PM</li>
+                                <li class="emphasis">Thursdays - MST</li>
+                                <li>4:30 PM - 5:30 PM</li>
+                                <li>5:30 PM - 6:30 PM</li>
+                                <li>6:30 PM - 7:30 PM</li>
+                                <li>7:30 PM - 8:30 PM</li>
+                                <li>8:30 PM - 9:30 PM</li>
+                                <li class="emphasis">Fridays - MST</li>
+                                <li>2:00 PM - 3:00 PM</li>
+                                <li>3:00 PM - 4:00 PM</li>
+                                <li>4:00 PM - 5:00 PM</li>
+                                <li>5:00 PM - 6:00 PM</li>
+                                <li>6:00 PM - 7:00 PM</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Bountiful</li>
-                                <li>Mondays</li>
-                                <li>6:30PM - 7:30PM MST</li>
+                                <li class="emphasis">Mondays - MST</li>
+                                <li>6:30PM - 7:30PM</li>
                             </ul>
                         </div>
                     </div>
@@ -271,59 +283,63 @@
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Lesson Subjects</h2>
                         <div class="wide-tab-container">
-                            <ul>
-                                <li class="section-text-p2">Techniques</li>
-                                <li>Layering</li>
-                                <li>Shading</li>
-                                <li>Loose Sketching</li>
-                                <li>Gesture Drawing</li>
-                                <li>Blending</li>
-                                <li>Erasing Lines</li>
-                                <li>Frottage</li>
-                                <li>Indenting</li>
-                                <li>Contour Line Drawing</li>
-                                <li>Continuous Line Drawing</li>
-                                <li>Detail Work</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Elements</li>
-                                <li>Lines</li>
-                                <li>Shapes</li>
-                                <li>Texture</li>
-                                <li>Space</li>
-                                <li>Color</li>
-                                <li>Value</li>
-                                <li>Form</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Artists</li>
-                                <li>What makes an artist?</li>
-                                <li>What makes an artist famous?</li>
-                                <li>Future</li>
-                                <li>Present</li>
-                                <li>Recent</li>
-                                <li>Past</li>
-                                <li>Ancient</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Art History</li>
-                                <li>Prehistoric</li>
-                                <li>Ancient</li>
-                                <li>Medieval</li>
-                                <li>Renaissance</li>
-                                <li>Baroque</li>
-                                <li>Neoclassicism</li>
-                                <li>Realism</li>
-                                <li>Impressionism</li>
-                                <li>Fauvism</li>
-                                <li>Cubism</li>
-                            </ul>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Crafts</li>
+                                    <li>Building</li>
+                                    <li>Creating</li>
+                                    <li>Making</li>
+                                    <li>Drawing</li>
+                                    <li>Designing</li>
+                                    <li>Shaping</li>
+                                    <li>Coloring</li>
+                                    <li>Painting</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Elements</li>
+                                    <li>Lines</li>
+                                    <li>Shapes</li>
+                                    <li>Texture</li>
+                                    <li>Space</li>
+                                    <li>Color</li>
+                                    <li>Value</li>
+                                    <li>Form</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Artists</li>
+                                    <li>What makes an artist?</li>
+                                    <li>What makes an artist famous?</li>
+                                    <li>Future</li>
+                                    <li>Present</li>
+                                    <li>Recent</li>
+                                    <li>Past</li>
+                                    <li>Ancient</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Art History</li>
+                                    <li>Prehistoric</li>
+                                    <li>Ancient</li>
+                                    <li>Medieval</li>
+                                    <li>Renaissance</li>
+                                    <li>Baroque</li>
+                                    <li>Neoclassicism</li>
+                                    <li>Realism</li>
+                                    <li>Impressionism</li>
+                                    <li>Fauvism</li>
+                                    <li>Cubism</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="acrylic" class="selected-tabs">
-                <h1 class="title-text-2">Acrylic Painting</h1>
+                <div class="class-title">
+                    <h1 class="title-text-2">Acrylic Painting</h1>
+                    <p class="section-text-p2">Ages 12 and up</p>
+                </div>
                 <div class="class-tab-container pricing basic-info">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
@@ -360,35 +376,38 @@
                 </div>
                 <div class="class-tab-container locations">
                     <div class="classes-tab-info">
-                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="location-title">
+                            <h2 class="section-text-p1">Locations</h2>
+                            <p class="section-text-p2">Mountain Standard Time</p>
+                        </div>
                         <div class="wide-tab-container">
                             <ul>
                                 <li class="section-text-p2">Millcreek</li>
-                                <li>Wednesdays</li>
-                                <li>7:30PM - 8:30PM MST</li>
+                                <li class="emphasis">Wednesdays</li>
+                                <li>7:30PM - 8:30PM</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Virtual</li>
-                                <li>Mondays</li>
-                                <li>4:30 PM - 5:30 PM MST</li>
+                                <li class="emphasis">Mondays</li>
+                                <li>4:30 PM - 5:30 PM</li>
                                 <li>8:30 PM - 9:30 PM MST</li>
-                                <li>Thursdays</li>
-                                <li>4:30 PM - 5:30 PM MST</li>
-                                <li>5:30 PM - 6:30 PM MST</li>
-                                <li>6:30 PM - 7:30 PM MST</li>
-                                <li>7:30 PM - 8:30 PM MST</li>
-                                <li>8:30 PM - 9:30 PM MST</li>
-                                <li>Fridays</li>
-                                <li>2:00 PM - 3:00 PM MST</li>
-                                <li>3:00 PM - 4:00 PM MST</li>
-                                <li>4:00 PM - 5:00 PM MST</li>
-                                <li>5:00 PM - 6:00 PM MST</li>
-                                <li>6:00 PM - 7:00 PM MST</li>
+                                <li class="emphasis">Thursdays</li>
+                                <li>4:30 PM - 5:30 PM</li>
+                                <li>5:30 PM - 6:30 PM</li>
+                                <li>6:30 PM - 7:30 PM</li>
+                                <li>7:30 PM - 8:30 PM</li>
+                                <li>8:30 PM - 9:30 PM</li>
+                                <li class="emphasis">Fridays</li>
+                                <li>2:00 PM - 3:00 PM</li>
+                                <li>3:00 PM - 4:00 PM</li>
+                                <li>4:00 PM - 5:00 PM</li>
+                                <li>5:00 PM - 6:00 PM</li>
+                                <li>6:00 PM - 7:00 PM</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Bountiful</li>
-                                <li>Mondays</li>
-                                <li>6:30PM - 7:30PM MST</li>
+                                <li class="emphasis">Mondays</li>
+                                <li>6:30PM - 7:30PM</li>
                             </ul>
                         </div>
                     </div>
@@ -397,59 +416,63 @@
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Lesson Subjects</h2>
                         <div class="wide-tab-container">
-                            <ul>
-                                <li class="section-text-p2">Techniques</li>
-                                <li>Layering</li>
-                                <li>Shading</li>
-                                <li>Loose Sketching</li>
-                                <li>Gesture Drawing</li>
-                                <li>Blending</li>
-                                <li>Erasing Lines</li>
-                                <li>Frottage</li>
-                                <li>Indenting</li>
-                                <li>Contour Line Drawing</li>
-                                <li>Continuous Line Drawing</li>
-                                <li>Detail Work</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Elements</li>
-                                <li>Lines</li>
-                                <li>Shapes</li>
-                                <li>Texture</li>
-                                <li>Space</li>
-                                <li>Color</li>
-                                <li>Value</li>
-                                <li>Form</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Artists</li>
-                                <li>What makes an artist?</li>
-                                <li>What makes an artist famous?</li>
-                                <li>Future</li>
-                                <li>Present</li>
-                                <li>Recent</li>
-                                <li>Past</li>
-                                <li>Ancient</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Art History</li>
-                                <li>Prehistoric</li>
-                                <li>Ancient</li>
-                                <li>Medieval</li>
-                                <li>Renaissance</li>
-                                <li>Baroque</li>
-                                <li>Neoclassicism</li>
-                                <li>Realism</li>
-                                <li>Impressionism</li>
-                                <li>Fauvism</li>
-                                <li>Cubism</li>
-                            </ul>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Crafts</li>
+                                    <li>Building</li>
+                                    <li>Creating</li>
+                                    <li>Making</li>
+                                    <li>Drawing</li>
+                                    <li>Designing</li>
+                                    <li>Shaping</li>
+                                    <li>Coloring</li>
+                                    <li>Painting</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Elements</li>
+                                    <li>Lines</li>
+                                    <li>Shapes</li>
+                                    <li>Texture</li>
+                                    <li>Space</li>
+                                    <li>Color</li>
+                                    <li>Value</li>
+                                    <li>Form</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Artists</li>
+                                    <li>What makes an artist?</li>
+                                    <li>What makes an artist famous?</li>
+                                    <li>Future</li>
+                                    <li>Present</li>
+                                    <li>Recent</li>
+                                    <li>Past</li>
+                                    <li>Ancient</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Art History</li>
+                                    <li>Prehistoric</li>
+                                    <li>Ancient</li>
+                                    <li>Medieval</li>
+                                    <li>Renaissance</li>
+                                    <li>Baroque</li>
+                                    <li>Neoclassicism</li>
+                                    <li>Realism</li>
+                                    <li>Impressionism</li>
+                                    <li>Fauvism</li>
+                                    <li>Cubism</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="private-lessons" class="selected-tabs">
-                <h1 class="title-text-2">Private Lessons</h1>
+                <div class="class-title">
+                    <h1 class="title-text-2">Private Lessons</h1>
+                    <p class="section-text-p2">All Ages</p>
+                </div>
                 <div class="class-tab-container pricing basic-info">
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
@@ -481,19 +504,22 @@
                 </div>
                 <div class="class-tab-container locations">
                     <div class="classes-tab-info">
-                        <h2 class="section-text-p1">Locations</h2>
+                        <div class="location-title">
+                            <h2 class="section-text-p1">Locations</h2>
+                            <p class="section-text-p2">Mountain Standard Time</p>
+                        </div>
                         <div class="wide-tab-container">
                             <ul>
                                 <li class="section-text-p2">Millcreek</li>
-                                <li>Fridays</li>
-                                <li>8:00AM - 9:00PM MST</li>
-                                <li>9:30AM - 10:30PM MST</li>
+                                <li class="emphasis">Fridays</li>
+                                <li>8:00AM - 9:00PM</li>
+                                <li>9:30AM - 10:30PM</li>
                             </ul>
                             <ul>
                                 <li class="section-text-p2">Virtual</li>
-                                <li>Fridays</li>
-                                <li>8:00AM - 9:00PM MST</li>
-                                <li>9:30AM - 10:30PM MST</li>
+                                <li class="emphasis">Fridays</li>
+                                <li>8:00AM - 9:00PM</li>
+                                <li>9:30AM - 10:30PM</li>
                             </ul>
                         </div>
                     </div>
@@ -502,53 +528,54 @@
                     <div class="classes-tab-info">
                         <h2 class="section-text-p1">Lesson Subjects</h2>
                         <div class="wide-tab-container">
-                            <ul>
-                                <li class="section-text-p2">Techniques</li>
-                                <li>Layering</li>
-                                <li>Shading</li>
-                                <li>Loose Sketching</li>
-                                <li>Gesture Drawing</li>
-                                <li>Blending</li>
-                                <li>Erasing Lines</li>
-                                <li>Frottage</li>
-                                <li>Indenting</li>
-                                <li>Contour Line Drawing</li>
-                                <li>Continuous Line Drawing</li>
-                                <li>Detail Work</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Elements</li>
-                                <li>Lines</li>
-                                <li>Shapes</li>
-                                <li>Texture</li>
-                                <li>Space</li>
-                                <li>Color</li>
-                                <li>Value</li>
-                                <li>Form</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Artists</li>
-                                <li>What makes an artist?</li>
-                                <li>What makes an artist famous?</li>
-                                <li>Future</li>
-                                <li>Present</li>
-                                <li>Recent</li>
-                                <li>Past</li>
-                                <li>Ancient</li>
-                            </ul>
-                            <ul>
-                                <li class="section-text-p2">Art History</li>
-                                <li>Prehistoric</li>
-                                <li>Ancient</li>
-                                <li>Medieval</li>
-                                <li>Renaissance</li>
-                                <li>Baroque</li>
-                                <li>Neoclassicism</li>
-                                <li>Realism</li>
-                                <li>Impressionism</li>
-                                <li>Fauvism</li>
-                                <li>Cubism</li>
-                            </ul>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Crafts</li>
+                                    <li>Building</li>
+                                    <li>Creating</li>
+                                    <li>Making</li>
+                                    <li>Drawing</li>
+                                    <li>Designing</li>
+                                    <li>Shaping</li>
+                                    <li>Coloring</li>
+                                    <li>Painting</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Elements</li>
+                                    <li>Lines</li>
+                                    <li>Shapes</li>
+                                    <li>Texture</li>
+                                    <li>Space</li>
+                                    <li>Color</li>
+                                    <li>Value</li>
+                                    <li>Form</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="section-text-p2">Artists</li>
+                                    <li>What makes an artist?</li>
+                                    <li>What makes an artist famous?</li>
+                                    <li>Future</li>
+                                    <li>Present</li>
+                                    <li>Recent</li>
+                                    <li>Past</li>
+                                    <li>Ancient</li>
+                                </ul>
+                                <ul>
+                                    <li class="section-text-p2">Art History</li>
+                                    <li>Prehistoric</li>
+                                    <li>Ancient</li>
+                                    <li>Medieval</li>
+                                    <li>Renaissance</li>
+                                    <li>Baroque</li>
+                                    <li>Neoclassicism</li>
+                                    <li>Realism</li>
+                                    <li>Impressionism</li>
+                                    <li>Fauvism</li>
+                                    <li>Cubism</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -11,11 +11,11 @@
     }
 
     .section-text-p1 {
-        font-size: 0.75rem;
+        font-size: 1.2rem;
     }
 
     .section-text-p2 {
-        font-size: 0.75rem;
+        font-size: 1.15rem;
     }
 
     section {
@@ -59,6 +59,11 @@
     #about {
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-img-container {
@@ -133,8 +138,76 @@
 
     /* Classes Page */
 
-    .class-info-container section {
+    #classes {
         width: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #classes .classes-left {
+        width: fit-content;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #classes .classes-right {
+        width: 100%;
+    }
+
+    #classes .selected-tabs {
+        width: 100%;
+    }
+
+    #classes .class-tab-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wide-tab-container div{
+        flex-direction: column;
+    }
+
+    /* Events Page */
+
+    #events {
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #events .events-left {
+        width: fit-content;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #events .events-right {
+        width: 100%;
+    }
+
+    #events .events-tabs {
+        width: 100%;
+    }
+
+    #events .events-tab-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wide-tab-container div{
+        flex-direction: column;
+    }
+
+    #events .art-example-container img {
+        width: 200px;
+    }
+
+    #events .art-example-container img:hover {
+        transform: scale(1.5);
     }
 }
 
@@ -215,8 +288,33 @@
 
     /* Classes Page */
 
-    .class-info-container section {
-        width: 700px;
+    #classes {
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
+    #classes .classes-left {
+        width: fit-content;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    /* Events Page */
+
+    #events {
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #events .events-left {
+        width: fit-content;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
 }
