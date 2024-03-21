@@ -218,9 +218,13 @@
 
     /* Gallery Page */
 
-    #gallery .title-text-2 {
+    .gallery-intro-text {
         display: flex;
-        transform: translateY(-1rem);
+        margin-top: 2rem;
+    }
+
+    .gallery-intro-text h2 {
+        font-size: 2rem;
     }
 
     .student-art-container .student-container{
