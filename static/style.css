@@ -854,3 +854,13 @@ footer .copyright {
     transform: scale(2);
     z-index: 1;
 }
+
+#events .time-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#events .time-title .section-text-p2{
+    text-decoration: none;
+}
