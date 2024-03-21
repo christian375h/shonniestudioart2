@@ -136,6 +136,12 @@
         width: 300px;
     }
 
+    /* Class Info Page */
+
+    .class-info-container section{
+        width: 300px;
+    }
+
     /* Classes Page */
 
     #classes {
@@ -305,6 +311,12 @@
         width: 700px;
     }
 
+    /* Class Info Page */
+
+    .class-info-container section {
+        width: 700px;
+    }
+
     /* Classes Page */
 
     #classes {
@@ -323,8 +335,13 @@
 
     /* Events Page */
 
+    .events-title-container {
+        width: 500px;
+        text-align: center;
+    }
+
     #events {
-        width: fit-content;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
