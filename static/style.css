@@ -750,8 +750,6 @@ footer .copyright {
 .events-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -845,13 +843,13 @@ footer .copyright {
 }
 
 #events .art-example-container img {
-    width: 150px;
+    width: 125px;
     border-radius: 0.75rem;
     transition: all 0.3s;
 }
 
 #events .wide-tab-container img:hover{
-    transform: scale(2);
+    transform: scale(2.25);
     z-index: 1;
 }
 
