@@ -223,6 +223,10 @@
         margin-top: 2rem;
     }
 
+    #gallery .section-text-p1 {
+        display: none;
+    }
+
     .gallery-intro-text h2 {
         font-size: 2rem;
     }

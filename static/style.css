@@ -882,6 +882,10 @@ footer .copyright {
     margin-bottom: 5rem;
 }
 
+#gallery .section-text-p2 {
+    font-size: 1.25rem;
+}
+
 .gallery-intro-text {
     display: none;
 }
