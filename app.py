@@ -59,7 +59,7 @@ def form():
     sender_subject = request.form.get("subject")
     sender_message = request.form.get("message")
 
-    msg = Message(subject=sender_subject, sender=sender_email, recipients=['contact.shonniestudioart@gmail.com', sender_email])
+    msg = Message(subject=sender_subject, sender=sender_email, recipients=['contact.shonniestudioart@gmail.com', 'shonnieart@gmail.com', sender_email])
     msg.body = sender_name + " has sent a message from " + sender_email + "\n\n" + sender_message
     mail.send(msg)
 
