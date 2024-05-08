@@ -178,7 +178,7 @@
     /* Events Page */
 
     #events {
-        width: 300px;
+        width: 400px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -204,12 +204,19 @@
         width: 100%;
     }
 
-    .wide-tab-container div{
+    .wide-tab-container .art-example-container{
         flex-direction: column;
+        width: 100%;
+    }
+
+    .wide-tab-container .art-example-container .img-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: max-content max-content;
     }
 
     #events .art-example-container img {
-        width: 200px;
+        width: 150px;
     }
 
     #events .art-example-container img:hover {

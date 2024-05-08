@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Events</title>
+
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/mediaqueries.css">
+
     <script src="/static/script.js"></script>
+    <script src="/static/selector.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -93,6 +99,12 @@
         <div class="events-container events-right">
             <section id="face-painting" class="selected-tabs active-selected-tab">
                 <h1 class="title-text-2">Face Painting</h1>
+                <div class="events-tab-container schedule">
+                    <label for="count">Party Size</label>
+                    <input type="number" id="facePaintCounter" name="count" min="1" max="5" value="1">
+                    <button class="btn" onclick="setFace()">Schedule Now</button>
+                    <p id="facePaintError"></p>
+                </div>
                 <div class="events-tab-container pricing basic-info">
                     <div class="events-tab-info pricing">
                         <h2 class="section-text-p1">Pricing</h2>
@@ -100,8 +112,8 @@
                             <li>$100 - 1 hour for up to 20 kids</li>
                             <li>$200 - 2 hours for up to 40 kids</li>
                             <li>$300 - 3 hours for up to 60 kids</li>
-                            <li>$300 - 4 hours for up to 80 kids</li>
-                            <li>$300 - 5 hours for up to 100 kids</li>
+                            <li>$400 - 4 hours for up to 80 kids</li>
+                            <li>$500 - 5 hours for up to 100 kids</li>
                             <li>Payment is due 24 hours before the session starts</li>
                             <li>If you have more questions refer to the 
                                 <a class="text-link" href="faq.html">FAQ</a>
@@ -113,23 +125,9 @@
                     </div>
                     <div class="events-tab-info basic-info">
                         <h2 class="section-text-p1">Basic Info</h2>
-                        <ul>
-                            <li>Schedule a time to have Shonnie come and paint faces at your party</li>
-                            <li>Supplies included</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="events-tab-container times">
-                    <div class="events-tab-info">
-                        <h2 class="section-text-p1">Times</h2>
-                        <div class="wide-tab-container">
-                            <p>
-                                <a class="text-link" href="contact.html">
-                                    Contact
-                                </a>
-                                Shonnie to schedule a time for your event
-                            </p>
-                        </div>
+                        <p>
+                            Schedule a time to have Shonnie come and paint faces at your party! Supplies included.
+                        </p>
                     </div>
                 </div>
                 <div class="events-tab-container face-paints">
@@ -170,6 +168,12 @@
                     <h1 class="title-text-2">Glitter Tattoos</h1>
                     <p class="section-text-p2">Coming Soon!</p>
                 </div>
+                <div class="events-tab-container schedule">
+                    <label for="count">Party Size</label>
+                    <input type="number" id="glitterTattoosCounter" name="count" min="1" max="5" value="1">
+                    <button class="btn" onclick="setTattoo()">Schedule Now</button>
+                    <p id="glitterTattoosError"></p>
+                </div>
                 <div class="events-tab-container pricing basic-info">
                     <div class="events-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>
@@ -196,19 +200,6 @@
                             <li>A variety of options are available</li>
                             <li>Supplies included</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="events-tab-container times">
-                    <div class="events-tab-info">
-                        <h2 class="section-text-p1">Times</h2>
-                        <div class="wide-tab-container">
-                            <p>
-                                <a class="text-link" href="contact.html">
-                                    Contact
-                                </a>
-                                Shonnie to schedule a time for your event
-                            </p>
-                        </div>
                     </div>
                 </div>
                 <div class="events-tab-container face-paints">
@@ -256,6 +247,12 @@
             </section>
             <section id="paint-night" class="selected-tabs">
                 <h1 class="title-text-2">Paint Nights</h1>
+                <div class="events-tab-container schedule">
+                    <label for="count">Party Size</label>
+                    <input type="number" id="paintNightCounter" name="count" min="1" max="2" value="1">
+                    <button class="btn" onclick="setNight()">Schedule Now</button>
+                    <p id="paintNightError"></p>
+                </div>
                 <div class="events-tab-container pricing basic-info">
                     <div class="events-tab-info">
                         <h2 class="section-text-p1">Pricing</h2>

@@ -119,14 +119,35 @@ header {
     vertical-align: top;
 }
 
-.nav-links li a{
+.nav-links li a {
     color: #b0b0b0;
-    transition: all 0.3s;
+    display: inline-block;
+    position: relative;
     font-weight: 300;
+    transition: all 0.3s;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: #fff;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links li a:hover::after {
+    color: #fff;
+    transform: scaleX(1);
+    transform-origin: bottom center;
 }
 
 .nav-links .active-nav-link {
@@ -656,7 +677,7 @@ footer .copyright {
 .class-tab-container .classes-tab-info .wide-tab-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     gap: 2rem;
@@ -800,6 +821,27 @@ footer .copyright {
     height: fit-content;
 }
 
+#events .events-tab-container.schedule {
+    align-items: center;
+}
+
+#events .events-tab-container.schedule input{
+    box-sizing: border-box;
+    color: #6e6e6e;
+    height: 60px;
+    width: 80px;
+    cursor: pointer;
+    background-color: #fff;
+    border: solid #212121;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#events .events-tab-container.schedule #errorMessage {
+    color: #ff0000;
+}
+
 .events-tab-container .events-tab-info {
     display: flex;
     flex-direction: column;
@@ -921,4 +963,90 @@ footer .copyright {
 .student-art-container .student-container img:hover {
     transform: scale(1.5);
     z-index: 1;
+}
+
+/* Checkout Page */
+
+#checkout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 2vh;
+}
+
+#checkout h1 {
+    text-align: center;
+}
+
+.checkout-information {
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+}
+
+.checkout-address {
+    width: 500px;
+}
+
+.checkout-payment {
+    width: 500px;
+}
+
+.checkout-information {
+    width: 500px;
+}
+
+.checkout-information form {
+    width: 100%;
+}
+
+.checkout-information form div {
+    margin-bottom: 0.75rem;
+}
+
+.checkout-information form label {
+    font-family: 'Segoe UI', Tahoma;
+    color: #212121;
+}
+
+.checkout-information form input{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: none;
+    background-color: #f1f1f1;
+    font-family: "Segoe UI";
+    font-size: 1rem;
+}
+
+.checkout-information form input:focus {
+    outline: none !important;
+    border:1px solid #1f8aff;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.checkout-payment button {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 2rem;
+    width: 50%;
+    transform: translateX(50%) translateY(1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.checkout-payment button:hover {
+    outline: none !important;
+    border:1px solid #1f8aff;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+/* Return Page */
+
+#success{
+    text-align: center;
 }
