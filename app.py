@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify, redirect
 from flask_mail import Mail, Message
 import os, json
-from dotenv import load_dotenv
 
 import stripe
 
@@ -179,6 +178,8 @@ def checkProcess():
     return jsonify(result=custEmail)
 
 # FLASK MAIL
+
+print(os.getenv('email_password'))
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
