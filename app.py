@@ -49,7 +49,9 @@ def checkout():
         'checkout.html', 
         selection = get_payment_selection(), 
         price = convert_price(calculate_order_amount()),
-        count = checkoutObj.getCount())
+        count = checkoutObj.getCount(),
+        stripeKeyPK = os.getenv('stripe_api_key_pk')
+        )
 
 @app.route('/success.html')
 def success():

@@ -1,5 +1,8 @@
+function getKeyPK() {
+  return stripeKeyPK
+}
 // This is your test publishable API key.
-const stripe = Stripe(process.env.stripe_api_key_pk);
+const stripe = Stripe(getKeyPK());
 
 // The items the customer wants to buy
 const items = [{ id: "xl-tshirt", id: "s-tshirt" }];

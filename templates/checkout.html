@@ -18,6 +18,9 @@
     <script src="https://js.stripe.com/v3/"></script>
     <script src="/static/checkout.js" defer></script>
     <script src="/static/selector.js" defer></script>
+    <script type="text/javascript">
+        var stripeKeyPK = '{{ stripeKeyPK }}'
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 
     
@@ -87,7 +90,7 @@
     <section id="checkout">
         <h1 class="section-text-p1">
             {{ selection }} party of {{ count }} <br>
-            ${{ price }}
+            ${{ price }} <br>
         </h1>
         <div class="checkout-information">
             <div class="checkout-information">
