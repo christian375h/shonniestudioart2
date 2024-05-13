@@ -22,7 +22,7 @@ dateTime.addEventListener("submit", (e) => {
 });
 
 function redirectCheckout(){
-    let newloc = "http://127.0.0.1:5000/checkout.html";
+    let newloc = "http://shonniestudioart.com/checkout.html";
     window.location.assign(newloc);
 }
 
