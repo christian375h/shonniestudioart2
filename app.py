@@ -102,9 +102,6 @@ def create_payment():
     except Exception as e:
         return jsonify(error=str(e)), 403
 
-if __name__ == '__main__':
-    app.run(port=5000)
-
 #class for handling count and selected checkout item
 class checkoutHandler:
     def __init__(self, count, selection, email, dateTime, partyName):
