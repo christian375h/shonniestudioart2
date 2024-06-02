@@ -95,6 +95,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 #coming-soon p {
@@ -1054,4 +1055,11 @@ button {
 
 #success {
   text-align: center;
+}
+
+/* Tattoo */
+
+.tattoo-logo {
+  width: 300px;
+  margin-bottom: 45px;
 }
