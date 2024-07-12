@@ -1,382 +1,398 @@
 @media only screen and (max-width: 800px) {
-    
-    /* General Styling */
+  /* General Styling */
 
-    .title-text-1 {
-        font-size: 1.66rem;
-    }
+  .title-text-1 {
+    font-size: 1.66rem;
+  }
 
-    .title-text-2 {
-        font-size: 1.25rem;
-    }
+  .title-text-2 {
+    font-size: 1.25rem;
+  }
 
-    .section-text-p1 {
-        font-size: 1.2rem;
-    }
+  .section-text-p1 {
+    font-size: 1.2rem;
+  }
 
-    .section-text-p2 {
-        font-size: 1.15rem;
-    }
+  .section-text-p2 {
+    font-size: 1.15rem;
+  }
 
-    section {
-        margin-top: 3vh;
-    }
+  section {
+    margin-top: 3vh;
+  }
 
-    /* Header Styling */
+  /* Header Styling */
 
-    .desktop-header-container {
-        display: none;
-    }
+  .desktop-header-container {
+    display: none;
+  }
 
-    .title-container {
-        display: none;
-    }
+  .title-container {
+    display: none;
+  }
 
-    .mobile-header-container {
-        display: flex;
-    }
+  .mobile-header-container {
+    display: flex;
+  }
 
-    footer .contact-container {
-        display: none;
-    }
+  footer .contact-container {
+    display: none;
+  }
 
-    /* Home Page */
+  /* Home Page */
 
-    /* Introduction Section */
+  /* Introduction Section */
 
-    #introduction {
-        margin-top: 1rem;
-    }
+  #introduction {
+    margin-top: 1rem;
+  }
 
-    .introduction-content-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
+  .introduction-content-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
 
-    /* About Section */
+  /* About Section */
 
-    #about {
-        flex-direction: column;
-        gap: 3rem;
-    }
+  #about {
+    flex-direction: column;
+    gap: 3rem;
+  }
 
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-img-container {
-        height: 300px;
-    }
+  .about-img-container {
+    height: 300px;
+  }
 
-    .about-content-container {
-        height: fit-content;
-    }
+  .about-content-container {
+    height: fit-content;
+  }
 
-    /* Instructor Section */
+  /* Instructor Section */
 
-    #instructor {
-        height: fit-content;
-    }
+  #instructor {
+    height: fit-content;
+  }
 
-    .instructor-container {
-        flex-direction: column;
-        height: fit-content;
-        gap: 3rem;
-        margin-top: 0;
-        width: 350px;
-    }
+  .instructor-container {
+    flex-direction: column;
+    height: fit-content;
+    gap: 3rem;
+    margin-top: 0;
+    width: 350px;
+  }
 
-    .instructor-container img {
-        height: 250px;
-        width: 250px;
-    }
+  .instructor-container img {
+    height: 250px;
+    width: 250px;
+  }
 
-    .instructor-container p {
-        width: 100%;
-    }
+  .instructor-container p {
+    width: 100%;
+  }
 
-    /* Classes Page */
+  /* Classes Page */
 
-    #classes {
-        margin-top: auto;
-    }
+  #classes {
+    margin-top: auto;
+  }
 
-    /* Contact Page */
+  /* Contact Page */
 
-    #contact {
-        margin-top: 0;
-    }
+  #contact {
+    margin-top: 0;
+  }
 
-    #contact .section-text-p1 {
-        font-size: 1.75rem;
-    }
+  #contact .section-text-p1 {
+    font-size: 1.75rem;
+  }
 
-    .contact-page-container {
-        flex-direction: column;
-        gap: 0;
-    }
+  .contact-page-container {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    .contact-container-right {
-        height: fit-content;
-        width: 300px;
-    }
+  .contact-container-right {
+    height: fit-content;
+    width: 300px;
+  }
 
-    /* FAQ Page */
+  /* FAQ Page */
 
-    header .faq-mobile-header {
-        align-items: center;
-    }
+  header .faq-mobile-header {
+    align-items: center;
+  }
 
-    header .faq-mobile-title h1 {
-        width: 200px;
-    }
+  header .faq-mobile-title h1 {
+    width: 200px;
+  }
 
-    .faq-container section{
-        width: 300px;
-    }
+  .faq-container section {
+    width: 300px;
+  }
 
-    /* Class Info Page */
+  /* Class Info Page */
 
-    .class-info-container section{
-        width: 300px;
-    }
+  .class-info-container section {
+    width: 300px;
+  }
 
-    /* Classes Page */
+  /* Classes Page */
 
-    #classes {
-        width: 300px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  #classes {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #classes .classes-left {
-        width: fit-content;
-        height: 100%;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
+  #classes .classes-left {
+    width: fit-content;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
-    #classes .classes-right {
-        width: 100%;
-    }
+  #classes .classes-right {
+    width: 100%;
+  }
 
-    #classes .selected-tabs {
-        width: 100%;
-    }
+  #classes .selected-tabs {
+    width: 100%;
+  }
 
-    #classes .class-tab-container {
-        flex-direction: column;
-        width: 100%;
-    }
+  #classes .class-tab-container {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .wide-tab-container div{
-        flex-direction: column;
-    }
+  .wide-tab-container div {
+    flex-direction: column;
+  }
 
-    /* Events Page */
+  /* Events Page */
 
-    #events {
-        width: 400px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  #events {
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #events .events-left {
-        width: fit-content;
-        height: 100%;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
+  #events .events-left {
+    width: fit-content;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
-    #events .events-right {
-        width: 100%;
-    }
+  #events .events-right {
+    width: 100%;
+  }
 
-    #events .events-tabs {
-        width: 100%;
-    }
+  #events .events-tabs {
+    width: 100%;
+  }
 
-    #events .events-tab-container {
-        flex-direction: column;
-        width: 100%;
-    }
+  #events .events-tab-container {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .wide-tab-container .art-example-container{
-        flex-direction: column;
-        width: 100%;
-    }
+  .wide-tab-container .art-example-container {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .wide-tab-container .art-example-container .img-container{
-        display: grid;
-        width: 100%;
-        grid-template-columns: max-content max-content;
-    }
+  .wide-tab-container .art-example-container .img-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: max-content max-content;
+  }
 
-    #events .art-example-container img {
-        width: 150px;
-    }
+  #events .art-example-container img {
+    width: 150px;
+  }
 
-    #events .art-example-container img:hover {
-        transform: scale(1.5);
-    }
+  #events .art-example-container img:hover {
+    transform: scale(1.5);
+  }
 
-    /* Gallery Page */
+  /* Gallery Page */
 
-    .gallery-intro-text {
-        display: flex;
-        margin-top: 2rem;
-    }
+  .gallery-intro-text {
+    display: flex;
+    margin-top: 2rem;
+  }
 
-    #gallery .section-text-p1 {
-        display: none;
-    }
+  #gallery .section-text-p1 {
+    display: none;
+  }
 
-    .gallery-intro-text h2 {
-        font-size: 2rem;
-    }
+  .gallery-intro-text h2 {
+    font-size: 2rem;
+  }
 
-    .student-art-container .student-container{
-        flex-direction: column;
-    }
+  .student-art-container .student-container {
+    flex-direction: column;
+  }
 
-    .student-art-container .student-container .student-sub-container img{
-        width: 150px;
-    }
+  .student-art-container .student-container .student-sub-container img {
+    width: 150px;
+  }
 
-    .student-art-container .student-container img:hover{
-        transform: scale(1.3);
-    }
+  .student-art-container .student-container img:hover {
+    transform: scale(1.3);
+  }
+
+  /* Checkout Page */
+  #checkout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-address {
+    width: 300px;
+  }
+
+  .checkout-payment {
+    width: 300px;
+  }
+
+  .checkout-information {
+    width: 300px;
+  }
 }
 
-@media only screen and (max-width:1200px) and (min-width:800px) {
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  /* General Styling */
 
-    /* General Styling */
+  .title-text-1 {
+    font-size: 2.75rem;
+  }
 
-    .title-text-1 {
-        font-size: 2.75rem;
-    }
+  .title-text-2 {
+    font-size: 2rem;
+  }
 
-    .title-text-2 {
-        font-size: 2rem;
-    }
+  .section-text-p1 {
+    font-size: 1.5rem;
+  }
 
-    .section-text-p1 {
-        font-size: 1.5rem;
-    }
+  .section-text-p2 {
+    font-size: 1rem;
+  }
 
-    .section-text-p2 {
-        font-size: 1rem;
-    }
+  /* Header */
 
-    /* Header */
+  .nav-links {
+    gap: 1rem;
+  }
 
-    .nav-links {
-        gap: 1rem;
-    }
+  /* Footer */
 
-    /* Footer */
+  footer .contact-container {
+    display: none;
+  }
 
-    footer .contact-container {
-        display: none;
-    }
+  /* Home Page */
 
-    /* Home Page */
+  /* Introduction Section */
 
-    /* Introduction Section */
+  .introduction-content-container {
+    margin-top: 0;
+  }
 
-    .introduction-content-container {
-        margin-top: 0;
-    }
+  /* About Section */
 
-    /* About Section */
+  #about {
+    align-items: flex-start;
+  }
 
-    #about {
-        align-items: flex-start;
-    }
+  .about-img-container {
+    height: 300px;
+  }
 
-    .about-img-container {
-        height: 300px;
-    }
+  .about-content-container {
+    height: fit-content;
+  }
 
-    .about-content-container {
-        height: fit-content;
-    }
+  /* Instructor Section */
 
-    /* Instructor Section */
+  #instructor {
+    height: fit-content;
+  }
 
-    #instructor {
-        height: fit-content;
-    }
+  .instructor-container img {
+    height: 250px;
+    width: 250px;
+  }
 
-    .instructor-container img {
-        height: 250px;
-        width: 250px;
-    }
+  .instructor-container p {
+    width: 300px;
+  }
 
-    .instructor-container p {
-        width: 300px;
-    }
+  /* FAQ Page */
 
-    /* FAQ Page */
+  .faq-container section {
+    width: 700px;
+  }
 
-    .faq-container section{
-        width: 700px;
-    }
+  /* Class Info Page */
 
-    /* Class Info Page */
+  .class-info-container section {
+    width: 700px;
+  }
 
-    .class-info-container section {
-        width: 700px;
-    }
+  /* Classes Page */
 
-    /* Classes Page */
+  #classes {
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #classes {
-        width: fit-content;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  #classes .classes-left {
+    width: fit-content;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
-    #classes .classes-left {
-        width: fit-content;
-        height: 100%;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
+  /* Events Page */
 
-    /* Events Page */
+  .events-title-container {
+    width: 500px;
+    text-align: center;
+  }
 
-    .events-title-container {
-        width: 500px;
-        text-align: center;
-    }
+  #events {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #events {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  #events .events-left {
+    width: fit-content;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
-    #events .events-left {
-        width: fit-content;
-        height: 100%;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
+  /* Gallery Page */
 
-    /* Gallery Page */
+  .student-art-container .student-container .student-sub-container img {
+    width: 150px;
+  }
 
-    .student-art-container .student-container .student-sub-container img{
-        width: 150px;
-    }
-
-    .student-art-container .student-container img:hover{
-        transform: scale(1.3);
-    }
+  .student-art-container .student-container img:hover {
+    transform: scale(1.3);
+  }
 }

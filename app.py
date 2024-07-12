@@ -49,7 +49,7 @@ def checkout():
         'checkout.html', 
         selection = get_payment_selection(), 
         price = convert_price(calculate_order_amount()),
-        count = checkoutObj.getCount(),
+        count = checkoutObj.getPartySize(),
         stripeKeyPK = os.getenv('stripe_api_key_pk')
         )
 
@@ -69,7 +69,10 @@ def calculate_order_amount():
         elif item == "glitterTattoos":
             return 5000 * int(checkoutObj.getCount())
         elif item == "paintNight":
-            return 3500 * int(checkoutObj.getCount())
+            if int(checkoutObj.getCount()) < 15:
+                return 3500 * int(checkoutObj.getCount())
+            else:
+                return 3000 * int(checkoutObj.getCount())
     return switch(checkoutObj.getSelection())
 
 def convert_price(input):
@@ -106,7 +109,7 @@ def create_payment():
 
 #class for handling count and selected checkout item
 class checkoutHandler:
-    def __init__(self, count, selection, email, dateTime, partyName):
+    def __init__(self, count, selection, email, dateTime, partyName, partySize):
          self.count = count
          self.selection = selection
          self.email = email
@@ -115,35 +118,40 @@ class checkoutHandler:
     #count
     def getCount(self):
         return self.count 
-      
     def setCount(self, x): 
         self.count = x 
+
+    #partySize
+    def getPartySize(self):
+        return self.partySize
+    def setPartySize(self, x): 
+        self.partySize = x 
+
     #selection
     def getSelection(self): 
         return self.selection
-      
     def setSelection(self, x): 
         self.selection = x
+
     #email
     def getEmail(self):
         return self.email
-
     def setEmail(self, x):
         self.email = x
+
     #dateTime
     def getDateTime(self):
         return self.dateTime
-
     def setDateTime(self, x):
         self.dateTime = x
+
     #party name
     def getPartyName(self):
         return self.partyName
-
     def setPartyName(self, x):
         self.partyName = x
 
-checkoutObj = checkoutHandler(1, 'facePaint', "", "", "")
+checkoutObj = checkoutHandler(1, 'facePaint', "", "", "", 0)
 
 @app.route('/selector-process', methods=['POST'])
 def selProcess(): 
@@ -151,9 +159,11 @@ def selProcess():
 
     selection = data['selection']
     count = data['count']
+    partySize = data['partySize']
 
     checkoutObj.setSelection(selection)
     checkoutObj.setCount(count)
+    checkoutObj.setPartySize(partySize)
 
     return jsonify(result=selection)
 

@@ -100,8 +100,8 @@
             <section id="face-painting" class="selected-tabs active-selected-tab">
                 <h1 class="title-text-2">Face Painting</h1>
                 <div class="events-tab-container schedule">
-                    <label for="count">Party Size</label>
-                    <input type="number" id="facePaintCounter" name="count" min="1" max="5" value="1">
+                    <label for="count">Party Size Up To</label>
+                    <input type="number" id="facePaintCounter" name="count" min="20" max="500" value="20" step="20">
                     <button class="btn" onclick="setFace()">Schedule Now</button>
                     <p id="facePaintError"></p>
                 </div>
@@ -169,8 +169,8 @@
                     <p class="section-text-p2">Coming Soon!</p>
                 </div>
                 <div class="events-tab-container schedule">
-                    <label for="count">Party Size</label>
-                    <input type="number" id="glitterTattoosCounter" name="count" min="1" max="5" value="1">
+                    <label for="count">Party Size Up To</label>
+                    <input type="number" id="glitterTattoosCounter" name="count" min="20" max="500" value="20" step="20">
                     <button class="btn" onclick="setTattoo()">Schedule Now</button>
                     <p id="glitterTattoosError"></p>
                 </div>
@@ -208,37 +208,43 @@
                         <div class="wide-tab-container">
                             <div class="art-example-container">
                                 <div class="img-container">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-1.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-2.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-3.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-4.jpg" alt="Waterfall">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-1.jpg" alt="Lilly">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-2.jpg" alt="Pumpkin">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-3.jpg" alt="Purple Butterflies">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-4.jpg" alt="Black Widow">
                                 </div>
                                 <div class="img-container">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-5.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-6.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-7.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-8.jpg" alt="Waterfall">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-5.jpg" alt="Boo!">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-6.jpg" alt="Golden Skull">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-7.jpg" alt="Monarch Butterflies">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-8.jpg" alt="Football">
                                 </div>
                                 <div class="img-container">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-9.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-10.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-11.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-12.jpg" alt="Waterfall">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-9.jpg" alt="Dragon Fire">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-10.jpg" alt="Pineapple">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-11.jpg" alt="Clownfish">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-12.jpg" alt="Lotus">
                                 </div>
                                 <div class="img-container">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-13.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-14.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-15.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-16.jpg" alt="Waterfall">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-13.jpg" alt="Pinecone">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-14.jpg" alt="Glowing Butterfly">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-15.jpg" alt="Actually Glowing Butterfly">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-16.jpg" alt="Flower">
                                 </div>
                                 <div class="img-container">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-17.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-18.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-19.jpg" alt="Waterfall">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-20.jpg" alt="Waterfall">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-17.jpg" alt="Blue Paws">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-18.jpg" alt="Purple Paws">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-19.jpg" alt="Triangle Design">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-20.jpg" alt="Love Design">
                                 </div>
                                 <div class="img-container">
-                                    <img src="/static/assets/glittertattoos/tattoo-example-21.jpg" alt="Waterfall">
+                                    <img src="/static/assets/glittertattoos/tattoo-example-21.jpg" alt="Flower Arrangement">
+                                    <img src="/static/assets/glittertattoos/butterflies.png" alt="Butterflies">
+                                    <img src="/static/assets/glittertattoos/purple.png" alt="Purple">
+                                    <img src="/static/assets/glittertattoos/flowers.png" alt="Flowers">
+                                </div>
+                                <div class="img-container">
+                                    <img src="/static/assets/glittertattoos/flower.png" alt="Flower">
                                 </div>
                             </div>
                         </div>
@@ -249,7 +255,7 @@
                 <h1 class="title-text-2">Paint Nights</h1>
                 <div class="events-tab-container schedule">
                     <label for="count">Party Size</label>
-                    <input type="number" id="paintNightCounter" name="count" min="1" max="2" value="1">
+                    <input type="number" id="paintNightCounter" name="count" min="1" max="50" value="1">
                     <button class="btn" onclick="setNight()">Schedule Now</button>
                     <p id="paintNightError"></p>
                 </div>
@@ -307,6 +313,12 @@
                         <div class="wide-tab-container">
                             <div class="art-example-container">
                                 <div class="img-container">
+                                    <img src="/static/assets/paintnightoptions/paint-night-arches.png" alt="Waterfall">
+                                    <img src="/static/assets/paintnightoptions/paint-night-easel.png" alt="Blossoms">
+                                    <img src="/static/assets/paintnightoptions/paint-night-mountains.png" alt="Forest">
+                                    <img src="/static/assets/paintnightoptions/paint-night-green.png" alt="Lillies">
+                                </div>
+                                <div class="img-container">
                                     <img src="/static/assets/paintnightoptions/paint-night-1.jpg" alt="Waterfall">
                                     <img src="/static/assets/paintnightoptions/paint-night-2.jpg" alt="Blossoms">
                                     <img src="/static/assets/paintnightoptions/paint-night-3.jpg" alt="Forest">
@@ -340,6 +352,7 @@
                                     <img src="/static/assets/paintnightoptions/paint-night-21.jpg" alt="Spectacular Aurora">
                                     <img src="/static/assets/paintnightoptions/paint-night-22.jpg" alt="Moonship">
                                     <img src="/static/assets/paintnightoptions/paint-night-23.jpg" alt="Sun Waves">
+                                    <img src="/static/assets/paintnightoptions/paint-night-tables.png" alt="Paint Night At Your Home">
                                 </div>
                             </div>
                         </div>
