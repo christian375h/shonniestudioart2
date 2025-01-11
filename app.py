@@ -4,7 +4,7 @@ import os, json
 
 import stripe
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 @app.route('/')
 def index():
